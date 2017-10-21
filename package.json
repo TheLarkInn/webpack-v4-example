@@ -1,0 +1,14 @@
+{
+  "name": "webpack-v4-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "html-webpack-plugin": "^2.30.1",
+    "webpack-dev-server": "^2.9.3"
+  },
+  "scripts": {
+    "build": "node ./node_modules/webpack/bin/webpack.js",
+    "watch": "yarn build --watch"
+  }
+}
