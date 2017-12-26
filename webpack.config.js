@@ -1,4 +1,5 @@
 const path = require('path');
+const ProfilingPlugin = require('./ProfilingPlugin');
 
 function webpackConfigWithEnv(env) {
   return {
@@ -14,13 +15,12 @@ function webpackConfigWithEnv(env) {
 
       ]
     },
+    mode: "production",
     plugins: [
-
-    ],
-    target: "node"
+      new ProfilingPlugin()
+    ]
   };
 };
-
 
 
 module.exports = webpackConfigWithEnv;
